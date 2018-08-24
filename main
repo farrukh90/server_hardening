@@ -1,0 +1,70 @@
+1) Enable IPTables
+2) Leave SELinux in enforcing mode
+3) Make use of /etc/security/access.conf
+4) Use TCPWrappers when you can
+5) Make sure by default ping is disabled 
+6) Unused Services and Open Ports
+
+
+Confidentiality — Sensitive information must be available only to a set of pre-defined individuals.
+Unauthorized transmission and usage of information should be restricted. For example,
+confidentiality of information ensures that a customer's personal or financial information is not
+obtained by an unauthorized individual for malicious purposes such as identity theft or credit
+fraud.
+Integrity — Information should not be altered in ways that render it incomplete or incorrect.
+Unauthorized users should be restricted from the ability to modify or destroy sensitive
+information.
+Availability — Information should be accessible to authorized users any time that it is needed.
+Availability is a warranty that information can be obtained with an agreed-upon frequency and
+timeliness. This is often measured in terms of percentages and agreed to formally in Service
+Level Agreements (SLAs) used by network service providers and their enterprise clients.
+
+
+
+Computer security is often divided into three distinct master categories, commonly referred to as controls:
+1. Physical
+2. Technical
+3. Administrative
+
+
+SysEngs tasks are usually 
+Technical Control which includes
+
+Encryption
+Smart cards
+Network authentication
+Access control lists (ACLs)
+File integrity auditing software
+
+Think as an attacker to your system and fix the system 
+
+There are 2 types of assesments
+1. External (HTTP,FTP,SMTP) 
+2. Internal 
+
+A false positive is a result, where the tool finds vulnerabilities which in reality do not
+exist. A false negative is when it omits actual vulnerabilities.
+
+Security administrators are only as good as the tools they use and the knowledge they retain
+
+
+Unfortunately, there is no predefined or industry approved methodology at this
+time; however, common sense and best practices can act as a sufficient guide.
+What is the target? Are we looking at one server, or are we looking at our entire network and everything
+within the network? Are we external or internal to the company? The answers to these questions are
+important as they help determine not only which tools to select but also the manner in which they are
+used.
+To learn more about establishing meth
+
+
+1.2.3.1. Scanning Hosts with Nmap
+1.2.3.2. Nessus
+1.2.3.3. Nikto
+
+1.3.2.1. Unused Services and Open Ports
+A common occurrence among system administrators is to install the operating system without paying
+attention to what programs are actually being installed. This can be problematic because unneeded
+services may be installed, configured with the default settings, and possibly turned on. This can cause
+unwanted services, such as Telnet, DHCP, or DNS, to run on a server or workstation without the
+administrator realizing it, which in turn can cause unwanted traffic to the server, or even, a potential
+pathway into the system for attackers
